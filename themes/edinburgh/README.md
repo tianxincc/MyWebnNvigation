@@ -1,67 +1,26 @@
-# Edinburgh
+# 模板说明
 
-Edinburgh is a clean, beautiful, and responsive portfolio theme for the Hexo static site generator. View a demo of the theme [here](https://sharvaridesai.github.io/hexo-theme-edinburgh-demo/).
+## 框架
 
-![Screenshot of Edinburgh theme](https://sharvaridesai.github.io/hexo-theme-edinburgh-demo/images/screenshot.png)
+模板基于bootstrap封装的一个简单的响应式模板，源代码地址：https://sharvaridesai.github.io/hexo-theme-edinburgh-demo/
 
-### Theme installation
-From the root directory of your Hugo site, run the following command:
-```
-$ git clone https://github.com/sharvaridesai/hexo-theme-edinburgh themes/edinburgh
-```
-Then update your blog's main `_config.yml` to set the theme to `edinburgh`:
+##　结构说明
 
-i.e:
+名称及地址结构
+edinburgh：模板文件夹
+themes\edinburgh\layout：主要文件夹，样式调整及页面设计全部在此文件夹的文件中修改
+themes\edinburgh\layout\_partial： 页面框架，上、下、左、右 设计底层样式模板
 
-```
-# Extensions
-## Plugins: http://hexo.io/plugins/
-## Themes: http://hexo.io/themes/
-theme: edinburgh
-```
+themes\edinburgh\layout\_partial\footer.ejs ： js相关引用
+themes\edinburgh\layout\_partial\google-analytics.ejs ：google-analytics 暂未使用，忽略
+themes\edinburgh\layout\_partial\head.ejs ：页面头部区域设计底层样式模板
+themes\edinburgh\layout\_partial\header.ejs ： 菜单栏的底层设计模板themes\edinburgh\layout\_partial\page-full.ejspage-full： 菜单栏点击进入后页面相关内容样式模板
+themes\edinburgh\layout\_partial\portfolio-full.ejs : 关联首页点击进入后的页面相关内容样式模板
+themes\edinburgh\layout\_partial\portfolio-index.ejs ： 主页面核心区域的样式
 
-### Theme configuration
+themes\edinburgh\layout\index.ejs ：首页内容区域，关联portfolio-index.ejs
+themes\edinburgh\layout\layout.ejs ：
+themes\edinburgh\layout\page.ejs
+themes\edinburgh\layout\post.ejs
 
-#### Header menu
-The menu is configured in your blog's `_config.yml`.
-```
-# Header
-menu:
-  About: /about
-  Contact: /contact
-  Instagram: https://www.instagram.com
-  LinkedIn: https://www.linkedin.com
-  Facebook: https://www.facebook.com
-```
-
-#### Favicon
-The blog's favicon can be changed by replacing the theme's favicon image in `/themes/edinburgh/source/favicon/favicon.ico`.
-
-#### Google Analytics tracking
-The Google Analytics Tracking ID is configured in the theme's `_config.yml`.
-```
-# Google Analytics Tracking ID
-google_analytics:
-```
-
-### Post configuration
-For each post, specify additional information in the [front matter](https://hexo.io/docs/front-matter.html).
-
-#### Post title
-Use the title to specify the text displayed as the heading for your post.
-```
-title: My Awesome Portfolio Piece
-```
-
-#### Post image
-Each post on this theme requires a cover image. If no cover image is provided, a default cover image is used. Specify your own image like this.
-```
-cover_image: /images/portfolio.jpg
-```
-
-### Creator
-This theme was designed and created by [Sharvari Desai](http://www.sharvaridesai.com/).
-
-## Bugs
-
-If you have a question, feature request or a bug you need me to fix, please [click here](https://github.com/sharvaridesai/hexo-theme-edinburgh/issues/new) to file an issue.
+themes\edinburgh\source：　资源文件，img、css、js、icon 等文件放于此处

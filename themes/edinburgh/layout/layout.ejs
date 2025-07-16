@@ -3,7 +3,7 @@
   <!-- Head tag -->
   <%- partial('_partial/head') %>
 
-  <body>
+  <body style="background-color:#e9fbf8;background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);">
   	<div class="container-fluid navbar-container m-sm-5">
       <!-- Header -->
       <%- partial('_partial/header') %>
@@ -12,7 +12,7 @@
   			<%- body %>
       </div>
       <% if (page.total > 1) { %>
-    <nav class="page-nav">
+    <nav class="page-nav ">
         <%- paginator({prev_text: '<', next_text: '>'}) %>
     </nav>
 <% } %>
@@ -21,4 +21,5 @@
     <!-- After footer scripts -->
     <%- partial('_partial/footer') %>
   </body>
+  
 </html>

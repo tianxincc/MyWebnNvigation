@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 休闲站台
+title: 互联
 subtitle: ''
 description: ''
 keywords:
@@ -97,6 +97,14 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: edinburgh
+
+plugins:
+  - hexo-browsersync
+
+hexo-browsersync:
+  ghostMode: true     # 同步滚动条位置等行为
+  notify: true        # 开启通知提醒
+  open: true          # 自动打开浏览器
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
